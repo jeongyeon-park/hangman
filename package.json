@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jeongyeon-park.github.io/hangman",
   "name": "client",
   "version": "0.1.0",
   "private": true,
