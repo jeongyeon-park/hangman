@@ -11,6 +11,7 @@ const Modal = () => {
   const answer = useSelector((state: stateType) => state.answer);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   return (
     <div
@@ -60,7 +61,7 @@ const Modal = () => {
                 className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-2xl font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
                 onClick={() => {
                   dispatch(resetSetting());
-                  window.location.reload();
+                  navigate("/");
                 }}
               >
                 다시 도전하기
